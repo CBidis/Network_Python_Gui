@@ -45,12 +45,13 @@ def dbping(dbip):
              print(r)
              fo.write(str(r).strip("('',)"))
              fo.write('\n')
-         print(fo.closed)
-         if fo.closed==False:
+         #print(fo.closed)
+         #that was a check for test , i should just only close the file
+         #if fo.closed==False:
             fo.close()
-            print(fo.closed)
-         else:
-            pass    
+         #   print(fo.closed)
+         #else:
+         #   pass    
       else:
           messagebox.showerror("ERROR","No data corresponding to the given IP")
    
